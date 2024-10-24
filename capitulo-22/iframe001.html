@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Iframe</title>
+    <style>
+        iframe{
+            height: 400px;
+            width: 400px;
+      
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="0" scolling="no"></iframe> para aprender a programar.</p>
+
+    <p>O site do Gustavo Guanabara <iframe src="https://gustavoguanabara.github.io" frameborder="0">Tudo que estiver contido aqui só aparecerá em navegadores que não possuem suporte para iframe. Pode se colocar uma mensagem informando: [ Seu navegador não é compatível com iframe] ou colocar uma link para o site desejado <a href="https://gustavoguanabara.github.io" target="_blank">Curso em Video</a></iframe> é bem legal</p>
+
+    <!--Nem todos os navegadores de dispositivos móveis possuem suporte para iframes-->
+
+    <p>Acessando o site do <iframe src="https://www.google.com.br" frameborder="0"></iframe> pena que não funciona dentro do iframe.</p>
+    
+
+    <p>Alguns sites possuem proteção em seu conteúdo para não serem visualizados dentro de um iframe</p>
+    <!--Alguns sites possuem proteção em seu conteúdo para não serem visualizados dentro de um iframe-->
+
+    <!--
+    - Por padrão um iframe possui o tamanho de 300px por 150px 
+    - Quando se é feito a configuração de tamanho inline no arquivo HTML e a configuração de tamanho no arquivo CSS, prevalecerá a configuração contida no arquivo CSS.
+    - Existe o parâmetro scolling com as opções:
+      . auto = se o conteúdo exceder o tamanho do iframe será exibida a barra de rolagem.
+      . yes = mesmo que o conteúdo caiba dentro do iframe será exibida a barra de rolagem.
+      . no = mesmo que o conteúdo seja maior do que o iframe não será exibida a barra de rolagem.
+        *observação: no navegador Google Chrome não funciona, mas no navegador Google Chrome utilizando o MAC, funciona.
+     - Frameborder aceita o número 0 ou qualquer outro, sendo que, acima de 0 o navegador irá criar uma borda de 1px, mesmo que possua o valor 333. Dessa forma, é melhor utilizar a CSS e usar border e o tamanho, estilo e cor desejado.    
+    -->
+</body>
+</html>

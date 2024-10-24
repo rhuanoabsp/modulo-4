@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        iframe{
+            width: 96vw;
+            height: 200px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate omnis est, earum architecto fuga sed error sequi eveniet explicabo soluta corporis autem laudantium dignissimos, animi minima magnam velit voluptatem alias.</p>
+
+    <ul>
+        <li><a href="pag001.html" target="frame">1ª opção</a></li>
+        <!--Foi utilizado em target o name do iframe, assim, quando clicar na 1ª opção a pag001 irá aparecer dentro do iframe.-->
+        <li><a href="pag002.html" target="frame">2ª opção</a></li>
+        <li><a href="pag003.html" target="frame">3ª opção</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus adipisci deserunt, vel consequatur itaque provident aspernatur quas rem quibusdam! Alias earum, omnis iure maxime doloremque repellat sint modi harum quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo facilis nam odio id animi porro culpa necessitatibus illum vitae, voluptate veritatis accusantium esse magni fugiat, dolorum accusamus numquam debitis rem.</p>
+
+    <iframe name="frame" srcdoc="Escolha uma das opções da lista acima<br><img src='imagens/cursoemvideo.png'><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus adipisci deserunt, vel consequatur itaque provident aspernatur quas rem quibusdam! Alias earum, omnis iure maxime doloremque repellat sint modi harum quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo facilis nam odio id animi porro culpa necessitatibus illum vitae, voluptate veritatis accusantium esse magni fugiat, dolorum accusamus numquam debitis rem.</p>"></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus placeat hic voluptatum, cum laudantium voluptates veniam? Voluptatibus, illo quibusdam odit aspernatur soluta eum, dolores optio perspiciatis cupiditate hic mollitia nisi.</p>
+</body>
+</html>

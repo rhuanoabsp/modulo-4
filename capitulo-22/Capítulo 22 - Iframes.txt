@@ -1,0 +1,20 @@
+Capítulo 22 Aula 1
+
+Não confundir Iframes com Frames. Inclusive frames só são usados em casos muito pontuais.
+
+Iframe - I=inline = um frame inline.
+-----------------------------------------------------
+Capítulo 22 Aula 6 – Inconvenientes do iframe
+
+Possa ser o conteúdo dentro do iframe sofra com dificuldades de indexação por parte do GoogleBot(O Googlebot nada mais é do que um programa de computador desenvolvido pelo Google com a finalidade de rastrear as páginas públicas de toda a web).
+*Observação: nunca monte um site com vários iframes no conteúdo inteiro, ou, com informações com são sensíveis para a indexação do site.
+
+Problemas com acessibilidade e usabilidade.
+Por exemplo(acessibilidade): pessoas com deficiência visual utilizam leitores de telas para a utilização de computadores, porém, leitores de telas tem alguns problemas para acessar os iframes.
+
+Usabilidade - possa ser que um usuário tenha acessado uma página dentro um site que está no iframe, e quando o usuário clicar em voltar, talvez alguns navegadores não entendam que é para voltar dentro da página contida no iframe, e não na pagina onde o iframe está.
+ . possa ser também, que algum link do site contido dentro do iframe, possua target="_blank", e pode ocorrer de o navegador não entender que é para abrir uma outra aba dentro do iframe, e acabe abrindo uma nova aba fora do iframe.
+ . possa ser ainda, que o site utilizando dentro do iframe não seja responsivo, ocasionando uma iframe com o conteúdo quebrado.
+ . possa ser também, que o site disponibilizado dentro do iframe, seja um site perigoso que está tentando dar golpes.
+
+(Pesquisar sobre ataques: cross site e XSS).
