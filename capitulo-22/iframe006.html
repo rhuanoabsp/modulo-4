@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando conteúdos</title>
+    <style>
+        body{
+            margin: auto;
+            text-align: center;
+        }
+        #video, .maps, #docs{
+            position: relative;
+            padding-bottom: 35%;
+        }
+        #concert{
+            position: absolute;
+            transform: translate(-50%, 0%);
+            width: 90%;
+            height: 90%;
+        }
+        iframe{
+            position: absolute;
+            transform: translate(-50%, 0%);
+            width: 90%;
+            height: 90%;
+        }
+    </style>
+</head>
+<body>
+        <h1>Conteúdos dentro de iframes</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptate, omnis deserunt maiores quae reprehenderit perferendis accusantium nam, harum porro ullam pariatur at neque amet quidem unde dignissimos totam. Eaque.</p>
+
+        <h2>Videos</h2>
+        <div id="video">
+            <iframe id="concert" width="760" height="315" src="https://www.youtube.com/embed/PLHj-eekdNU?si=Qu3JwnlW78pfdRrI" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <h2>Mapa do Waze</h2>
+        <div class="maps">
+            <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-23.550310&lon=-46.634201&ct=livemap" width="500" height="400" allowfullscreen></iframe>
+        </div>
+
+        <h2>Mapa do Google</h2>
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.6568676397324!2d-87.62913666060244!3d41.878728465496195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cbdbcffb379%3A0x56e331a5adcd0769!2sChicago%20Philharmonic!5e0!3m2!1spt-BR!2sbr!4v1729874432053!5m2!1spt-BR!2sbr" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h2>Google Docs</h2>
+        <div id="docs">
+            <iframe src="https://docs.google.com/document/d/e/2PACX-1vSw1g-fWlVsbOLOTaUiNnIceGVZJRYGHCHw5Raz7ZQkHexulKDsaBYXF5EZni4Z8Q/pub?embedded=true"></iframe>
+        </div>
+</body>
+</html>

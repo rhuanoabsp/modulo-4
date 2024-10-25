@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt nobis laudantium voluptatibus hic quos aliquid ratione tempore, perspiciatis magni repudiandae fugiat sapiente error nulla dolore porro veritatis. Est, perferendis aspernatur?</p>
+
+    <iframe src="pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-refere-when-downgrade">[Seu navegador não é compatível com iframes]</iframe>
+    <!--
+    - Quando é inserido o atributo sandbox com o valor sandbox, é bloqueado todo e qualquer acesso que outros sites que estejam dentro do iframe tentem fazer.
+    - no-refere-when-downgrade é o valor padrão de referrerpolicy.
+    - Se quiser deixar um pouco mais limitado o que está contido no iframe, basta inserir no-referrer em referrerpolicy. Alguns sites capturam informações para mostrar propagandas, dessa forma quando se usa referrerpolicy="no-referrer" o conteúdo que está carregado dentro do iframe não irá coletar nenhum dado do usuário.
+
+    allow-same-origin = permitindo o uso de documentos de mesma origem.
+    allow-forms = permitindo o uso de formulários.
+    allow-scripts = permitindo o uso de scripts, já que, o HTML 5 executa scripts quando também executam formulários.
+    -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptates, iste deserunt laudantium expedita alias omnis natus sunt inventore dolore, molestiae laboriosam consequatur cum quam quasi in, similique pariatur culpa?</p>
+</body>
+</html>
