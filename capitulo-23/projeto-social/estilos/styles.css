@@ -28,13 +28,31 @@ main{
     transform: translate(-50%, -50%);
     background: url("../imagens/frame-iphone.png") no-repeat;
 }
+
+
+#tela{
+    position: relative;
+    top: 12.92%;
+    left: 07%;
+    width: 267px;
+    height: 473px;
+}
 a > img{
     display: block;
     width: 56.25px;
     height: 56.25px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.400);
     position: relative;
     top:0%;
     left: 93%;
     border-radius: 50%;
-    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box; /* A borda fará parte da caixa */
 }
+a > img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.747);
+    transform: translate(-3%, -3%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.719);
+    transition: 0.3s, border 0.3s;
+}
+
