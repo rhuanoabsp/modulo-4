@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-scrollbar{  /* Para esconder as barras de rolagens */
+    width: 0;
+    height: 0;
+}
+img{
+    width: 100vw;
+    /* Foi colocar 100% de largura de tela, pois ficar exatamente 100% da largura do iframe.*/
+}
+a{
+    display: block;
+    background-color: darkred;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+}
+a:hover{
+    background-color: red;
+}
