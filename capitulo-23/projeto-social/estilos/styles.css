@@ -28,8 +28,6 @@ main{
     transform: translate(-50%, -50%);
     background: url("../imagens/frame-iphone.png") no-repeat;
 }
-
-
 #tela{
     position: relative;
     top: 12.92%;
@@ -37,17 +35,27 @@ main{
     width: 267px;
     height: 469px;
 }
+#redes-sociais{
+    float: right;
+}
 a > img{
-    display: block;
+    border-radius: 50%;
+    width: 50px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.400);
+    box-sizing: border-box; /* A borda fará parte da caixa */
+    /* ou
+    border-radius: 50%;
     width: 56.25px;
     height: 56.25px;
-    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.400);
+    margin: 10px;
+    display: block;
     position: relative;
     top:0%;
     left: 93%;
-    border-radius: 50%;
-    margin: 10px;
-    box-sizing: border-box; /* A borda fará parte da caixa */
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.400);
+    box-sizing: border-box; 
+    */
 }
 a > img:hover{
     border: 2px solid rgba(255, 255, 255, 0.747);
@@ -55,4 +63,7 @@ a > img:hover{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.719);
     transition: 0.3s, border 0.3s;
 }
-
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
