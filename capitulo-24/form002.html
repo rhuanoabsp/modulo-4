@@ -7,12 +7,17 @@
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro.php" method="post">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
-            <label for="iusuario">Usuário:</label><input type="text" name="usuario" id="iusuario" required>
+            <label for="iusuario">Usuário:</label><input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="30" size="10" placeholder="Digite o usuário..." autocomplete="username">
+            <!--
+                minlength = mínimo de caracteres no input usuário.
+                maxlength = máximo de caracteres no input usuário.
+                size = quantas letras serão mostradas no input, acarretando em uma rolagem lateral caso tenha mais letras do que o específicado em size.
+            -->
         </p>
         <p>
-            <label for="isenha">Senha:</label><input type="password" name="senha" id="isenha" required>
+            <label for="isenha">Senha:</label><input type="password" name="senha" id="isenha" required minlength="8" placeholder="Digite a senha..." autocomplete="current-password">
         </p>
         <p>
             <input type="submit" value="Enviar">
