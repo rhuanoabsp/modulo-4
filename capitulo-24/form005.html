@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo biológico</legend>
+            <input type="radio" name="sexo" id="imasculino" value="Masculino"><label for="imasculino">Masculino</label>
+            <input type="radio" name="sexo" id="ifeminino" checked value="Feminino"><label for="ifeminino">Feminino</label> 
+            <!-- 
+                - Todo botão de Radio no mesmo grupo, precisam ter o mesmo name. 
+                  No parâmetro name dos inputs acima, foi utilizado o mesmo nome, possibilitando que o usuário selecione uma única opção correta.
+                - checked no exemplo acima, fará com que a opção Feminino já esteja marcada.
+            -->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="futebol" id="ifutebol"><label for="ifutebol">Futebol</label> <br>
+            <input type="checkbox" name="volei" id="ivolei"><label for="ivolei">Vôlei</label><br>
+            <input type="checkbox" name="Basquete" id="ibasquete"><label for="ibasquete">Basquete</label><br>
+            <input type="checkbox" name="ciclismo" id="iciclismo"><label for="iciclismo">Ciclismo</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
