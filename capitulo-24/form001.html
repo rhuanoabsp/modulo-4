@@ -7,24 +7,29 @@
 </head>
 <body>
     <h1>Meu primeiro formulário no Curso em Vídeo</h1>
-    <form action="cadastro.php" autocomplete="off" method="get"> 
+    <form action="cadastro.php" method="get" autocomplete="off"> 
         <!--
-        - Com autocomplete="off" o formulário não irá sugerir preenchimento.
         - action="" é a ação que será disparada quando o usuário clicar no input tipo submit.
         - Em HTML existem dois métodos de envio de formulários: GET(método em que os dados aparecem na URL), e POST(método em que os dados não aparecem na URL).
            *obs.: 
                 - quando não se preenche o tipo de método de envio, por padrão é o método GET. 
-                - o método POST apesar de não apresentar os dados na URL, não protege o acesso aos dados. É necessário usar criptografia "HTTPS". Exemplo: na página de um determinado formulário, preencha os campos e clique para enviar os dados. Após, abra o "Inspencionar elemento". Em seguida, clique em Network(rede) seguido do clique em no resultado que falhou. Clicando sobre "headers(cabeçalhos)" será possível visualizar os dados do formulário.
+                - o método POST apesar de não apresentar os dados na URL, não protege o acesso aos dados. É necessário usar criptografia "HTTPS". Exemplo: na página de um determinado formulário, preencha os campos e clique para enviar os dados. Após, abra o "Inspencionar elemento". Em seguida, clique em Network(rede) seguido do clique no resultado que falhou. Clicando sobre "headers(cabeçalhos)" será possível visualizar os dados do formulário.
+        - Com autocomplete="off" o formulário não irá sugerir preenchimento.
         - Get será utilizado quando os dados do formulário não forem sensíveis; quando se desejar permitir o compartilhamento de URL. *obs.: os dados no método GET não podem ultrapassar 3000 bytes.      
-        - POST será utilizado para enviar dados sensíveis(não esquecendo de utilizar HTTPS); se os tiverem mais de 3000 bytes; e se desejar enviar arquivos. 
+        - POST será utilizado para enviar dados sensíveis(não esquecendo de utilizar HTTPS); se os dados tiverem mais de 3000 bytes; e se desejar enviar arquivos. 
         -->
-        <p><label for="inome">Nome:</label><input type="text" name="nome" id="inome"></p>
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome">
+        </p>
         <!--
         - label = etiqueta - que relaciona a um determinado objeto de entrada.
         - para que o formulário funcione melhor em PHP, é necessário que todo objeto de entrada possua um "name". 
         - para que o formulário funcione melhor em JS, é necessário que todo objeto de entrada possua um "ID". 
         -->
-        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+           <input type="text" name="sobrenome" id="isobrenome">
+        </p>
         <p><input type="submit" value="Enviar"></p>
     </form>
 </body>

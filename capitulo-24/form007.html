@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php">
+        <p>
+            <label for="iestado">Estado:</label>
+            <select name="estado" id="iestado">
+                <optgroup label="Região Norte">
+                    <!--
+                    *Observação: o label da tag optgroup é um label atributo. Diferentemente do label elemento.
+                    -->
+                    <option value="AC">Acre</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="PA">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SE">Sergipe</option>
+                </optgroup>
+                <optgroup label="Região Centro-Oeste">
+                    <option value="DF">Distrito Federal</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                </optgroup>
+                <optgroup label="Região Sudeste">
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP" selected>São Paulo</option>
+                    <!--Foi utilizado o atributo select para que o formulário já venha preenchido com o Estado de São Paulo, considerando que a maioria dos usuários do site são do Estado de São Paulo.-->
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprofissao">Profissão:</label>
+            <input type="text" name="profissao" id="iprofissao" list="lista-prof">
+            <datalist id="lista-prof">
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Marceneiro</option>
+                <option>Padeiro</option>
+            </datalist>
+            <!--Com o exemplo acima a lista de profissão possui algumas opções, e caso não conste a profissão do usuário na lista, é possível que o usuário insira o nome da profissão digitando o nome.-->
+        </p>
+        <p>
+            <label for="imensagem">Mensagem:</label>
+            <textarea name="mensagem" id="imensagem" cols="25" rows="10" placeholder="Escreva sua mensagem aqui..."></textarea>
+            <!--Quando usar textarea o ideal é se utilizar o método POST.-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
