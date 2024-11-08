@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* Para os demais dispositivos */
+
+/* Typical Device Breakpoints 
+-----------------------------------
+(medidas obtidas no W3C)
+Pequenas telas: de 600px até 768px
+Celular: até 600px de largura
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+TV: acima de 1200px
+*/
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main{
+        border: 2px solid black;
+        width: 90vw;
+        text-align: center;
+        text-decoration: overline;
+    }
+    main  h1{
+        text-shadow: none;
+        color: black;
+    }
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: block;}
+    #desktop{display: none;}
+    #tv{display: none;}
+    main::after{
+        content: 'Este artigo foi impresso através do site: https://cursoemvideo.com';
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #phone{display: none;}
+    #tablet{display: block;}
+    #print{display: none;}
+    #desktop{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width:992px) and (max-width:1350px){ /*Apesar das especificações citadas na parte superior da CSS, preferi utilizar outras medidas de largura a partir daqui.*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    main{
+        width: 50vw;
+    }
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #desktop{display: block;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width:1350px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        width: 70vw;
+    }
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #desktop{display: none;}
+    #tv{display: block;}
+}
