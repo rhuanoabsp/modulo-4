@@ -105,7 +105,7 @@
         margin-top: 7px;
     }
 }
-@media screen and (min-width:768px) and (max-width:992px){
+@media screen and (min-width:769px) and (max-width:992px){
     body{
         background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
         height: 100vh;
@@ -118,19 +118,20 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    
     }
-    #imagem{
+    #imagem{ 
         background-image: url(../imagens/metal.jpg);
         background-position: bottom center;
-        background-size: cover;
-        width: 237.83px;
-        height: 280px;
-        display: inline-block;
-        border-radius: 20px 0px 0px 20px;
+        background-size: cover; 
+        background-color: white;
+        width: 30vw; 
+        height: 280px; 
+        display: inline-block; 
+        border-radius: 20px 0px 0px 20px; 
+        
     }
     #login{
-        width: 572.8px;
+        min-width: 316px;
         height: 280px;
         display: inline-block;
         background-color: white;
@@ -151,22 +152,24 @@
         background-color: var(--cor1);
         border-radius: 10px;
         margin: 5px 10px;
+        min-width: 48.5vw;
     }
     .inputs{
         background-color: #94CFCD;
         height: 38px;
-        width: 518px;
+        min-width: 44.4vw;
         margin: 0px 0px 2px 0px;
         padding-left: 5px;
         border: 0px;
         border-radius: 10px;
         color: gray;
         font-size: 1em;
+   
     }
-    #ientrar{
+    #entrar{
         background-color: rgb(83, 170, 167);
         height: 40px;
-        width: 552px;
+        min-width: 48.5vw;
         margin: 0px 10px 5px 10px;
         border-radius: 10px;
         color: white;
@@ -174,13 +177,29 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 1em;
     }
+    #ientrar{
+        position: relative;
+        min-width: 48.7vw;
+        background-color: rgb(83, 170, 167); 
+        height: 40px; 
+        
+        border-radius: 10px; 
+        color: white; 
+        border: none; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        font-size: 1em; 
+      
+    }
+    #entrar:hover{
+        background-color: #326d6b;
+    }
     #ientrar:hover{
         background-color: #326d6b;
     }
     #esqueci-senha{
         background-color: white;
         height: 40px;
-        width: 552px;
+        min-width: 48.5vw;
         margin: 0px 10px;
         border: 1px solid rgb(83, 170, 167);
         border-radius: 10px;
@@ -202,7 +221,7 @@
         margin-top: 7px;
     }
 }
-@media screen and (min-width:992px){
+@media screen and (min-width:993px){
     body{
         background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
         height: 100vh;
@@ -210,7 +229,7 @@
     }
     main{
         height: 350px;
-        width: 80vw;
+        max-width: 950px;
         position: relative;
         top: 50%;
         left: 50%;
@@ -224,7 +243,8 @@
         width: 475px;
         height: 350px;
         display: inline-block;
-        border-radius: 20px 0px 0px 20px;
+        border-radius: 0px 20px 20px 0px;
+        float: right;
     }
     #login{
         width: 475px;
@@ -232,17 +252,18 @@
         display: inline-block;
         background-color: white;
         position: absolute;
-        border-radius: 0px 20px 20px 0px;
+        border-radius: 20px 0px 0px 20px;
+        float: left;
     }
     h1{
         text-align: center;
-        font-size: 1.5em;
+        font-size: 2em;
         padding: 10px;
     }
     #login > P{
         text-align: justify;
-        padding: 0px 10px;
-        font-size: 0.8em;
+        padding: 10px 10px;
+        font-size: 1em;
     }
     .formulario{
         background-color: var(--cor1);
