@@ -166,6 +166,22 @@
         font-size: 1em;
    
     }
+    #aentrar{
+        height: 40px;
+        min-width: 48.5vw;
+        text-decoration: none;
+        color: rgb(83, 170, 167);
+        position: relative;
+        left: 0%;
+    }
+    a{
+        height: 40px;
+        min-width: 48.5vw;
+        text-decoration: none;
+        color: rgb(83, 170, 167);
+        position: relative;
+        left: 38%;
+    }
     #entrar{
         background-color: rgb(83, 170, 167);
         height: 40px;
@@ -209,12 +225,6 @@
     }
     #esqueci-senha > a:hover{
         color: #2D6462;
-    }
-    a{
-        text-decoration: none;
-        color: rgb(83, 170, 167);
-        position: relative;
-        left: 38%;
     }
     #icon-esqueci{
         background-color: #2D6462;
@@ -281,6 +291,22 @@
         color: gray;
         font-size: 1em;
     }
+    #aentrar{
+        height: 40px;
+        min-width: 48.5vw;
+        text-decoration: none;
+        color: rgb(83, 170, 167);
+        position: relative;
+        left: 0%;
+    }
+    a{
+        height: 40px;
+        min-width: 48.5vw;
+        text-decoration: none;
+        color: rgb(83, 170, 167);
+        position: relative;
+        left: 38%;
+    }
     #ientrar{
         background-color: rgb(83, 170, 167);
         height: 40px;
@@ -308,12 +334,6 @@
     }
     #esqueci-senha > a:hover{
         color: #2D6462;
-    }
-    a{
-        text-decoration: none;
-        color: rgb(83, 170, 167);
-        position: relative;
-        left: 38%;
     }
     #icon-esqueci{
         background-color: #2D6462;
