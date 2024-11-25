@@ -67,6 +67,9 @@
         color: gray;
         font-size: 1em;
     }  
+    .inputs:focus{
+        background-color: white;
+    }
     #ientrar{
         background-color: rgb(83, 170, 167);
         height: 42.2px;
@@ -88,6 +91,7 @@
         margin: 0px 10px;
         border: 1px solid rgb(83, 170, 167);
         border-radius: 10px;
+        text-align: center;
     }
     #esqueci-senha:hover{
         background-color: #6CD3CF;
@@ -98,7 +102,7 @@
     a{
         text-decoration: none;
         color: rgb(83, 170, 167);
-        margin-left:50px;
+       
     }
     #icon-esqueci{
         background-color: #2D6462;
@@ -164,7 +168,9 @@
         border-radius: 10px;
         color: gray;
         font-size: 1em;
-   
+    }
+    .inputs:focus{
+        background-color: white;
     }
     #aentrar{
         height: 40px;
@@ -180,7 +186,6 @@
         text-decoration: none;
         color: rgb(83, 170, 167);
         position: relative;
-        left: 38%;
     }
     #entrar{
         background-color: rgb(83, 170, 167);
@@ -219,6 +224,7 @@
         margin: 0px 10px;
         border: 1px solid rgb(83, 170, 167);
         border-radius: 10px;
+        text-align: center;
     }
     #esqueci-senha:hover{
         background-color: #6CD3CF;
@@ -291,6 +297,9 @@
         color: gray;
         font-size: 1em;
     }
+    .inputs:focus{
+        background-color: white;
+    }
     #aentrar{
         height: 40px;
         min-width: 48.5vw;
@@ -305,7 +314,6 @@
         text-decoration: none;
         color: rgb(83, 170, 167);
         position: relative;
-        left: 38%;
     }
     #ientrar{
         background-color: rgb(83, 170, 167);
@@ -328,6 +336,7 @@
         margin: 0px 10px;
         border: 1px solid rgb(83, 170, 167);
         border-radius: 10px;
+        text-align: center;
     }
     #esqueci-senha:hover{
         background-color: #6CD3CF;
