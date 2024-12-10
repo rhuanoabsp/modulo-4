@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor0: #49a09d;
+    --cor1: #5f2c82;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 767px){
+    body{
+        height: 100vh;
+        background-color: var(--cor1);
+    }
+    main{
+        background-color: white;
+        height: 87vh;
+        width: 250px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+    }
+    #imagem{
+        width: 250px;
+        height: 200px;
+        background-image: url(../imagem/metal.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        border-radius: 20px 20px 0px 0px;
+    }
+    h1{
+        text-align: center;
+        margin: 10px;
+        font-size: 1.5em;
+    }
+    p{
+        text-align: justify;
+        margin: 0px 10px 0px 10px;
+        font-size: 0.8em;
+    }
+    #email{
+        background-color: var(--cor1);
+        width: 230px;
+        height: 40px;
+        margin: 5px 10px;
+        border-radius: 7px;
+    }
+    #senha{
+        background-color: var(--cor1);
+        width: 230px;
+        height: 40px;
+        margin: 5px 10px;
+        border-radius: 7px;
+    }
+    img{
+        height: 30px;
+        margin: 5px;
+    }
+    .inputs{
+        width: 176px;
+        height: 26px;
+        margin: 1px 0px;
+        position: absolute;
+        border-radius: 7px;
+        background-color: #94CFCD;
+        padding: 4px;
+        font-size: 0.9em;
+    }
+    .inputs:focus{
+        background-color: white;
+    }
+    #ientrar{
+        width: 230px;
+        height: 40px;
+        background-color: #53AAA7;
+        margin: 0px 10px 5px 10px;
+        border-radius: 7px;
+        color: white;
+        cursor: pointer;
+        border: none;
+        font-size: 0.9em;
+    }
+    #ientrar:hover{
+        background-color: #2D6462;
+    }
+    a{
+        text-decoration: none;
+    }
+    #esqueci-senha{
+        width: 230px;
+        height: 40px;
+        background-color: white;
+        margin: 0px 10px;
+        border: 1px solid #53AAA7;
+        border-radius: 7px;
+        color: #2D6462;
+        text-align: center;
+    }
+    #esqueci-senha:hover{
+        background-color: #6CD3CF;
+    }
+    #esqueci-senha > img{
+        background-color: #2D6462;
+        height: 15px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:993px){
+    body{
+        background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    main{
+        height: 280px;
+        width: 80vw;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55%, -50%);
+        border-radius: 20px;
+    }
+    #imagem{
+        background-image: url(../imagem/metal.jpg);
+        width: 25vw;
+        height: 280px;
+        display: inline-block;
+        border-radius: 20px 0px 0px 20px;
+        background-size: cover;
+        background-position: center bottom;
+    }
+    #login{
+        width: 60vw;
+        height: 260px;
+        display: inline-block;
+        position: absolute;
+        background-color: white;
+        border-radius: 0px 20px 20px 0px;
+        padding: 10px;
+    }
+    h1{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    p{
+        text-align: justify;
+        font-size: 0.8em;
+    }
+    img{
+        height: 30px;
+        margin: 5px;
+    }
+    #email{
+        background-color: var(--cor1);
+        margin: 4px 0px;
+        border-radius: 7px;
+    }
+    #senha{
+        background-color: var(--cor1);
+        border-radius: 7px;
+    }
+    .inputs{
+        width: 53.5vw;
+        height: 29px;
+        margin: 1px 0px;
+        position: absolute;
+        border-radius: 7px;
+        background-color: #94CFCD;
+        padding: 4px;
+        font-size: 0.9em;
+    }
+    .inputs:focus{
+        background-color: white;
+    }
+    #ientrar{
+        background-color: #53AAA7;
+        border: none;
+        border-radius: 7px;
+        color: white;
+        font-size: 0.9em;
+        width: 60vw;
+        height: 40px;
+        margin: 4px 0px;
+        cursor: pointer;
+    }
+    #ientrar:hover{
+        background-color: #2D6462;
+    }
+    #esqueci-senha{
+        width: 59.9vw;
+        height: 39px;
+        background-color: white;
+        color: #2D6462;
+        border: 1px solid #53AAA7;
+        border-radius: 7px;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+    }
+    #esqueci-senha > img{
+        background-color: #2D6462;
+        height: 15px;
+    }
+    #esqueci-senha:hover{
+        background-color: #6CD3CF;
+    }
+}
+@media screen and (min-width: 994px){
+    body{
+        background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    main{
+        width: 950px;
+        height: 350px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+    }
+    #imagem{
+        background-image: url(../imagem/metal.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        width: 475px;
+        height: 350px;
+        float: right;
+        display: inline-block;
+        border-radius: 0px 20px 20px 0px;
+    }
+    #login{
+        display: inline-block;
+        width: 455px;
+        height: 330px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 20px 0px 0px 20px;
+    }
+    h1{
+        text-align: center;
+        font-size: 2em;
+    }
+    p{
+        font-size: 1em;
+        text-align: justify;
+        margin: 18px 0px;
+    }
+    #email{
+        background-color: var(--cor1);
+        border-radius: 7px;
+        margin: 4px 0px;
+    }
+    .inputs{
+        background-color: #94CFCD;
+        border-radius: 7px;
+        position: absolute;
+        width: 408px;
+        height: 38px;
+        margin: 1px 0px;
+    }
+    .inputs:focus{
+        background-color: white;
+    }
+    img{
+        height: 30px;
+        margin: 5px;
+    }
+    #senha{
+        background-color: var(--cor1);
+        border-radius: 7px;
+    }
+    #ientrar{
+        background-color: #53AAA7;
+        border: none;
+        border-radius: 7px;
+        color: white;
+        font-size: 0.9em;
+        width: 455px;
+        height: 40px;
+        margin: 4px 0px;
+        cursor: pointer;
+    }
+    #ientrar:hover{
+        background-color: #2D6462;
+    }
+    #esqueci-senha{
+        width: 455px;
+        height: 39px;
+        background-color: white;
+        color: #2D6462;
+        text-align: center;
+        border: solid 1px #53AAA7;
+        border-radius: 7px;
+    }
+    #esqueci-senha:hover{
+        background-color: #6CD3CF;
+    }
+    a{
+        text-decoration: none;
+    }
+    #esqueci-senha > img{
+        background-color: #2D6462;
+        height: 15px;
+    }
+}
