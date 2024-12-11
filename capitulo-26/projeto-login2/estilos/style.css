@@ -18,7 +18,7 @@ body{
     }
     main{
         background-color: white;
-        height: 87vh;
+        height: 515px;
         width: 250px;
         position: relative;
         top: 50%;
@@ -112,6 +112,97 @@ body{
     }
 }
 @media screen and (min-width:768px) and (max-width:993px){
+    body{
+        height: 100vh;
+        background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
+    }
+    main{
+        width: 80vw;
+        height: 280px;
+        border-radius: 20px;
+        background-color: white;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #imagem{
+        background-image: url(../imagem/metal.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        width: 32vw;
+        height: 280px;
+        display: inline-block;
+        border-radius: 20px 0px 0px 20px;
+    }
+    #login{
+        width: 45vw;
+        height: 4280px;
+        float: right;
+        padding: 10px;
+    }
+    h1{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    p{
+        text-align: justify;
+        font-size: 0.8em;
+        margin-top: 4px;
+    }
+    img{
+        height: 30px;
+    }
+    .email-senha{
+        background-color: var(--cor1);
+        border-radius: 7px;
+        height: 40px;
+        margin: 4px 0px;
+    }
+    .inputs{
+        background-color: #94CFCD;
+        border-radius: 7px;
+        width: 40vw;
+        height: 34px;
+        position: absolute;
+        margin: 1px 0px 1px 4px;
+    }
+    .inputs:focus{
+        background-color: white;
+    }
+    #ientrar{
+        width: 45vw;
+        height: 38px;
+        border-radius: 7px;
+        border: none;
+        margin: 4px 0px;
+        cursor: pointer;
+        background-color: #53AAA7;
+        color: white;
+    }
+    #ientrar:hover{
+        background-color: #2D6462;
+    }
+    #esqueci-senha{
+        width: 45vw;
+        height: 34px;
+        border: 1px solid #2D6462;
+        border-radius: 7px;
+        text-align: center;
+        color: #2D6462;
+    }
+    #esqueci-senha:hover{
+        background-color: #6CD3CF;
+    }
+    a{
+        text-decoration: none;
+    }
+    #esqueci-senha > img{
+        height: 15px;
+        background-color: #2D6462;
+    }
+
+    /*
     body{
         background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
         background-repeat: no-repeat;
@@ -210,7 +301,7 @@ body{
     }
     #esqueci-senha:hover{
         background-color: #6CD3CF;
-    }
+    } */
 }
 @media screen and (min-width: 994px){
     body{
