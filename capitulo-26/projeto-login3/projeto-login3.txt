@@ -25,3 +25,45 @@ text: 1em
 
 Título: Login
 Parágrafo: Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
+------------------------------------------
+overflow: hidden - tudo que estiver fora da borda o sistema irá esconder.
+
+transition: width 0.3s, height 0.3s
+transition-timing-function: ease; dará uma suavizada na transição da animação.
+
+
+senha - minlength="8" maxlength="20"
+
+entrar - form > input[type=submit]{
+		display: block;
+		font-size: 1em;
+		width: 100%;
+		height: 40px;
+	   }
+
+replicando a configuração acima
+
+form > a.botao {
+		display: block;
+		width: 100%;
+		height: 40px;
+	   }
+
+div.campo > label{
+		display: none;
+	   }
+
+icons:
+color: white;
+font-size: 2em;
+width: 40px;
+padding: 5px;
+
+.inputs:
+width: calc(100% - 44px); /* 100% da largura da caixa menos a largura dos heigth: 100%;			 icons. */
+transform: translateY(-10%); /* - apenas para cima
+				- sempre que tiver uma animação, 					  transição ou transformação, insira na 				  última linha do seletor, para que não 				  dê problemas em dispositivos móveis. */
+
+
+
+
