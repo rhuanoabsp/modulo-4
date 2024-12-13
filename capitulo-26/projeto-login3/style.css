@@ -1,0 +1,308 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --cor0: #49a09d;
+    --cor1: #5f2c82;
+    --cor2: #94CFCD;
+    --cor3: #53AAA7;
+    --cor4: #2D6462;
+    --cor5: #6CD3CF;
+}
+
+@media screen and (max-width: 767px){
+    body{
+        height: 100vh;
+        background-color: var(--cor1);
+    }
+    main{
+        width: 250px;
+        height: 515px;
+        border-radius: 20px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        border: 1px solid black;
+    }
+    #imagem{
+        width: 250px;
+        height: 200px;
+        background-image: url(imagem/metal.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        border-radius: 20px 20px 0px 0px;
+    }
+    #login{
+        background-color: white;
+        padding: 10px;
+        height: 315px;
+        border-radius: 0px 0px 20px 20px;
+    }
+    h1{
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    p{
+        text-align:left;
+        font-size: 0.8em;
+        margin: 10px 0px;
+        font-weight:500;
+    }
+    .dados{
+        width: 230px;
+        height: 40px;
+        background-color: var(--cor1);
+        margin: 5px 0px;
+        border-radius: 7px;
+    }
+    img{
+        height: 30px;
+        margin: 5px;
+    }
+    .inputs{
+        position: absolute;
+        width: 181px;
+        height: 34px;
+        margin: 1px 0px;
+        border-radius: 7px;
+        background-color: var(--cor2);
+        padding: 0px 0px 0px 3px;
+    }
+    .inputs:focus{
+        background-color: white;
+    }
+    #ientrar{
+        width: 230px;
+        height: 40px;
+        border-radius: 7px;
+        background-color: var(--cor3);
+        color: white;
+        font-size: 1em;
+        border: none;
+        cursor: pointer;
+    }
+    #ientrar:hover{
+        background-color: var(--cor4);
+    }
+    #esqueci-senha{
+        width: 230px;
+        height: 40px;
+        border: 1px solid var(--cor4);
+        border-radius: 7px;
+        background-color: white;
+        text-align: center;
+        font-size: 1em;
+        margin: 5px 0px;
+    }
+    #esqueci-senha:hover{
+        background-color: var(--cor5);
+    }
+    #esqueci-senha > img{
+        background-color: var(--cor4);
+        height: 15px;
+    }
+    a{
+        text-decoration: none;
+        color: var(--cor4);
+    }
+}
+@media screen and (min-width:768px) and (max-width: 992px){
+    body{
+        background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
+        height: 100vh;
+    }
+    main{
+        width: 87vw;
+        height: 280px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px 0px 0px 20px;
+    }
+    #imagem{
+        background-image: url(imagem/metal.jpg);
+        width: 29.8vw;
+        height: 280px;
+        display: inline-block;
+        background-size: cover;
+        background-position: center bottom;
+        border-radius: 20px 0px 0px 20px;
+    }
+    #login{
+        background-color: white;
+        width: 54vw;
+        height: 260px;
+        display: inline-block;
+        position: absolute;
+        border-radius: 0px 20px 20px 0px;
+        padding: 10px;
+    }
+    h1{
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+    p{
+        text-align: left;
+        font-size: 0.8em;
+    }
+    .dados{
+        background-color: var(--cor1);
+        margin: 5px 0px;
+        border-radius: 7px;
+    }
+    .dados > img{
+        height: 30px;
+        margin: 5px;
+    }
+    .inputs{
+        position: absolute;
+        width: 48.1vw;
+        height: 38px;
+        margin: 1px 0px;
+        border-radius: 7px;
+        background-color: var(--cor2);
+        padding: 0px 0px 0px 3px;
+    }
+    .inputs:focus{
+        background-color: white;
+    }
+    #ientrar{
+        width: 54vw;
+        height: 40px;
+        border-radius: 7px;
+        border: none;
+        background-color: var(--cor3);
+        color: white;
+        cursor: pointer;
+        font-size: 1em;
+    }
+    #ientrar:hover{
+        background-color: var(--cor4);
+    }
+    #esqueci-senha{
+        width: 53.7vw;
+        height: 37.8px;
+        border: 1px solid var(--cor4);
+        border-radius: 7px;
+        color: var(--cor4);
+        text-align: center;
+        margin: 4px 0px;
+    }
+    #esqueci-senha:hover{
+        background-color: var(--cor5);
+    }
+    a{
+        text-decoration: none;
+    }
+    #esqueci-senha > img{
+        height: 15px;
+        background-color: var(--cor4);
+        margin: 4px 0px;
+    }
+}
+@media screen and (min-width:993px){
+    body{
+        height: 100vh;
+        background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
+    }
+    main{
+        width: 950px;
+        height: 350px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+    }
+    #imagem{
+        background-image: url(imagem/metal.jpg);
+        width: 475px;
+        height: 350px;
+        float: right;
+        background-size: cover;
+        background-position: center bottom;
+        border-radius: 0px 20px 20px 0px;
+    }
+    #login{
+        width: 455px;
+        height: 330px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 20px 0px 0px 20px;
+    }
+    h1{
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    p{
+        text-align: left;
+        font-size: 1em;
+        margin: 20px 0px;
+    }
+    .dados{
+        background-color: var(--cor1);
+        margin: 5px 0px;
+        border-radius: 7px;
+    }
+    .dados > img{
+        height: 30px;
+        margin: 5px;
+    }
+    .inputs{
+        position: absolute;
+        width: 407px;
+        height: 38px;
+        margin: 1px 0px;
+        border-radius: 7px;
+        background-color: var(--cor2);
+        padding: 0px 0px 0px 3px;
+    }
+    .inputs:focus{
+        background-color: white;
+    }
+    #ientrar{
+        width: 454px;
+        height: 39px;
+        background-color: var(--cor3);
+        color: white;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        font-size: 1em;
+    }
+    #ientrar:hover{
+        background-color: var(--cor4);
+    }
+    #esqueci-senha{
+        width: 454px;
+        height: 39px;
+        border: 1px solid var(--cor4);
+        border-radius: 7px;
+        background-color: white;
+        color: var(--cor4);
+        margin: 5px 0px;
+    }
+    #esqueci-senha:hover{
+        background-color: var(--cor5);
+    }
+    a{
+        text-align: center;
+        text-decoration: none;
+    }
+    #esqueci-senha > img{
+        height: 15px;
+        background-color: var(--cor4);
+        margin: 4px 0px;
+    }
+}

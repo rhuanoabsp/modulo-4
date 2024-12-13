@@ -1,0 +1,27 @@
+#49a09d;
+#5f2c82;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+#94CFCD inputs
+#2D6462 hover
+#2D6462 color
+#6CD3CF hover
+
+padding 10
+h1: 24px marginbottom 10px
+    24px 
+    32px 
+p: 12px 12px 16px
+
+text: 1em
+
+250 x 515 imagem 250 x 200
+671 x 280
+950 x 350 imagem 475 x 350
+
+35 65
+50 50
+
+Título: Login
+Parágrafo: Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.

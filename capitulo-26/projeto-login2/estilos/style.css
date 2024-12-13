@@ -199,6 +199,7 @@ body{
     }
     #esqueci-senha > img{
         height: 15px;
+        margin: 5px;
         background-color: #2D6462;
     }
 
